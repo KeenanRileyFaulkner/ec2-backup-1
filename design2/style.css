@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden
+}
+
+nav {
+    height: 100px;
+    width: 100vw;
+    background-color: #2b2d42;
+    display: flex;
+    align-items: center;
+}
+
+#nav-logo {
+    margin-left: 30px;
+}
+
+nav > a {
+    margin-right: 50px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav > a:link {
+    text-decoration: none;
+}
+
+.right-icon {
+    margin-left: auto;
+}
+
+.home-container {
+    width: 90%;
+    margin: 2em auto 1em auto;
+    padding: 1em;
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#specialty-container {
+    
+    background-color: #ef233c;
+}
+
+#specialty-pic {
+    height: 625px;
+}
+
+.curr-offer {
+    margin-left: 1em;
+    padding: 20px 30px 20px 30px;
+    width: 60%;
+    background-color: #d90429;
+    color: white;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 48pt;
+}
+
+p {
+    font-weight: 500;
+    font-size: 30pt;
+}
+
+h6 {
+    margin-top: 175px;
+    font-weight: 300;
+}
+
+#quick-links {
+    background-color: #2b2d42;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    margin-left: -1em;
+}
+
+div, #specialty-pic {
+    border-radius: 5px;
+}
+
+#quick-links-header {
+    font-size: 40pt;
+}
+
+#quick-links-header ~ a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 28pt;
+    font-weight: 400;
+}
+
+#quick-links-header ~ a:hover {
+    text-decoration: underline;
+}
+
+#view-menu-container {
+    background-color: #8d99ae;
+    margin-left: 2em;
+    margin-right: -1em;
+    width: 100%;
+    padding: 1em;
+}
+
+#view-menu-pic {
+    height: 100%;
+    width: 100%;
+    background-image: url("/design2/Menu Order Pic.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 400px;
+    height: 100px;
+    background-color: #edf2f4;
+    font-size: 18pt;
+    border: none;
+    border-radius: 5px;
+    color: #2b2d2f;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.90;
+}
+
+:visited {
+    color: white;
+}

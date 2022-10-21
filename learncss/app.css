@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+nav {
+    height: 100px;
+    position: fixed;
+    width: 100vw;
+    background: black;
+    color: white;
+    font-size: 24pt;
+    font-family: helvetica;
+}
+
+.nav-btn {
+    float: left;
+    padding: 31px;
+}
+
+.nav-btn:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+.nav-btn:active {
+    background: white;
+    color: black;
+}
+
+#align-right {
+    float: right;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorful {
+    font-size: 24pt;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.colorful:hover {
+    color: blue;
+}
+
+#bold:hover {
+    font-weight: bold;
+}
+
+#em:hover {
+    font-style: italic;
+}
+
+#big:hover {
+    font-size: 36pt;
+}
+
+#small:hover {
+    font-size: 12pt;
+}
+
+#font:hover {
+    font-family: monospace;
+}

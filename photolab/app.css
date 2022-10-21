@@ -1,0 +1,149 @@
+body {
+    background-color: #f7f6f3;
+}
+
+nav {
+    border-bottom-color: #cdcdcd;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+}
+
+.logo {
+    width: 50px;
+}
+
+.about-pic {
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.about-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-header {
+    font-weight: 500;
+    font-size: 18pt;
+    padding-left: 50px;
+}
+
+.about-p {
+    font-size: 12pt;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    word-wrap: break-word;
+}
+
+.home-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.home-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-link {
+    height: 500px;
+    width: 250px;
+    
+    margin: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18pt;
+    border-radius: 30px;
+}
+
+.home-link:hover {
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.home-link:link {
+    text-decoration: none;
+}
+
+.portfolio-home-link {
+    background-image: url("https://api.openverse.engineering/v1/images/27e158f9-f7b2-4a0d-855c-246d9765d6a7/thumb/");
+    background-size: cover;
+}
+
+.reviews-home-link {
+    background-image: url("https://api.openverse.engineering/v1/images/d0fc5314-c470-4b5f-9f24-e05272c29a05/thumb/");
+    background-size: cover;
+}
+
+.about-home-link {
+    background-image: url("https://api.openverse.engineering/v1/images/f4c71a21-6b62-41ab-a3da-d35bddb78bbf/thumb/");
+    background-size: cover;
+    background-position: center top;
+}
+
+.portfolio-container {
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    column-count: 3;
+    column-gap: 1em;
+}
+
+.portfolio-container > img {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+.reviews-container {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review {
+    height: 150px;
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    box-shadow: 8px 8px #888888;
+    padding-left: 1em;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+
+.review > img {
+    height: 40px;
+    border-color: black;
+    border-width: thick;
+    grid-column-start: 1;
+}
+
+.review > h2 {
+    width: 300px;
+    height: 40px;
+    grid-column-start: 2;
+}
+
+.review > span {
+    grid-column-start: 2;
+}

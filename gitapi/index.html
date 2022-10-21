@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git API</title>
+</head>
+<body>
+    <h1>Github IDs</h1>
+    <form id="usrForm">
+        <input type="search" placeholder="GitHub username" id="usr"/>
+        <input type="submit" value="Submit" />
+    </form>
+    
+    <div id="gh-id-container"></div>
+    
+    <script>
+        document.getElementById("usrForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const id = document.getElementById("usr").value;
+            const fullURL = "https://api.github.com/users/" + id;
+            fetch(fullURL)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((json) => {
+                    const idRes = json["id"];
+                    const strong = document.createElement("strong");
+                    strong.appendChild(document.createTextNode("ID=" + idRes));
+                    
+                    const container = document.getElementById("gh-id-container");
+                    container.textContent = "";
+                    container.appendChild(strong);
+                })
+        })
+    </script>
+</body>
+</html>

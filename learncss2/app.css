@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 100px;
+    position: fixed;
+    width: 100vw;
+    background: black;
+    color: white;
+    font-size: 24pt;
+    font-family: helvetica;
+    overflow: hidden;
+}
+
+.nav-btn {
+    float: left;
+    padding: 31px;
+}
+
+.nav-btn:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+.nav-btn:active {
+    background: white;
+    color: black;
+}
+
+#align-right {
+    float: right;
+}
+
+.audio-player-components {
+    background-image: 
+        url("https://www.udiscovermusic.com/wp-content/uploads/2019/03/Killers-press-shot-web-optimised-1000-CREDIT-Rob-Loud-1-1000x600.jpg");
+    background-size: cover;
+    background-position: center 100px;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    
+    padding-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.album {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.fa-circle-play {
+    color: white;
+}
+
+#itm {
+    background-image: 
+        url("https://www.thekillersmusic.com/sites/g/files/aaj15356/f/release/202008/ab67616d0000b273cda9b715df60a7d8fe0a9d62.jpg");
+    background-size: cover;
+}
+
+#pm {
+    background-image:
+        url("https://www.thekillersmusic.com/sites/g/files/aaj15356/f/release/202203/ab67616d0000b27377cdf5ef37315ca75791b13b.jpg");
+    background-size: cover;
+}
+
+#boy {
+    background-image:
+        url("https://cdn2.albumoftheyear.org/375x/album/524422-boy.jpg");
+    background-size: cover;
+}
+
+#bb {
+    background-image: 
+        url("https://www.thekillersmusic.com/sites/g/files/aaj15356/f/styles/suzuki_breakpoints_image_mobile-lg_sq/public/release/201708/88dca81c8f0bdec670e222feb3f3aa884bc15228.jpg?itok=8hMg2QQc");
+    background-size: cover;
+}
+
+#ww {
+    background-image:
+        url("https://www.thekillersmusic.com/sites/g/files/aaj15356/f/release/201709/49d01f27dcf8f6bec2ba4f16038bd22e309ae2d0.jpg");
+    background-size: cover;
+}

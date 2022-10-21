@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mountains</h1>
+
+    <div id="mountains"></div>
+
+<script>
+  const MOUNTAINS = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+  ];
+
+  const mountainDiv = document.getElementById('mountains');
+  const table = document.createElement('table');
+  mountainDiv.appendChild(table);
+  const headerRow = document.createElement('tr');
+  table.appendChild(headerRow);
+  for(let key of Object.keys(MOUNTAINS[0])) {
+      let column = document.createElement('th');
+      column.innerHTML = key;
+      headerRow.appendChild(column);
+  }
+  MOUNTAINS.map((elem) => {
+      const newRow = document.createElement('tr');
+      let name = document.createElement('td');
+      let height = document.createElement('td');
+      let place = document.createElement('td');
+      name.innerHTML = elem.name;
+      height.innerHTML = elem.height;
+      place.innerHTML = elem.place;
+      newRow.appendChild(name);
+      newRow.appendChild(height);
+      newRow.appendChild(place);
+      table.appendChild(newRow);
+  });
+  
+  const data = document.querySelectorAll('td');
+  console.log(data);
+  for(let entry of data) {
+      if (!isNaN(Number(entry.innerHTML))) {
+          entry.style.textAlign = "right";
+      }
+  }
+</script>
+</body>
+</html>

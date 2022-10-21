@@ -1,0 +1,276 @@
+body {
+    color: white;
+    background-color: #0d1117;
+}
+
+.navbar {
+    background-color: #0d1117;
+    border-bottom: 1px solid white;
+}
+
+.home-main-section {
+    padding: 40px;
+    padding-left: 48px;
+    padding-top: 60px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content-container {
+    min-width: 300px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-header {
+    color: white;
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+.about-description {
+    color: white;
+    font-size: 12pt;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+.about-pic-container {
+    border-width: 0px;
+    border-top-width: 1px;
+    border-color: white;
+    border-style: solid;
+}
+
+@media (min-width: 1603px) {
+    .about-pic-container {
+        border-width: 0px;
+        border-left-width: 1px;
+        padding-left: 100px;
+    }
+    
+    .about-description {
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 400px) {
+    .about-pic-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.about-pic {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-height: 650px;
+}
+
+
+.project-card-container {
+    margin-top: 100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 710px;
+}
+
+.project-card {
+    height: 600px;
+    width: 330px;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-card-header {
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.project-link {
+    margin-bottom: 20px;
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+
+.project-card-header:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.project-description {
+    color: white;
+    font-size: 12pt;
+    padding: 0 4px 0 4px;
+    margin-top: 20px;
+}
+
+.contact-container {
+    padding-top: 100px;
+    margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 300px;
+    width: 70%;
+    border: 1px solid white;
+    padding: 12px;
+    margin-bottom: auto;
+    margin-top: 64px;
+    border-radius: 20px;
+}
+
+.contact-form-element {
+    width: 95%;
+    height: 40px;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.contact-header {
+    width: 95%;
+    height: 40px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 18pt;
+    color: white;
+}
+
+.contact-submit-btn {
+    width: 80px;
+    height: 40px;
+    margin: 12px 0 12px 12px;
+    background-color: #040507;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid white;
+}
+
+.contact-submit-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#contact-message {
+    padding-top: 12px;
+    height: 150px;
+}
+
+#contact-name {
+    margin-top: 12px;
+}
+
+.skills-container {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    max-width: 55%;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    padding: 32px;
+    margin: 12px;
+    border: 2px solid #c1c9d9;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div > i {
+    font-size: 64pt;
+}
+
+.fa-html5 {
+    color: #d74b24;
+}
+
+.fa-html5:hover {
+    color: #ff6034;
+}
+
+.fa-css3-alt {
+    color: #2091eb;
+}
+
+.fa-css3-alt:hover {
+    color: #4eafff;
+}
+
+.fa-js {
+    color: #e4d04b;
+}
+
+.fa-js:hover {
+    color: #ebff39;
+}
+
+.fa-node-js {
+    color: #5aa844;
+}
+
+.fa-node-js:hover {
+    color: #7ce65f;
+}
+
+.fa-database {
+    color: #30628a;
+}
+
+.fa-database:hover {
+    color: #458ac2;
+}
+
+.fa-react {
+    color: #4fb7d3;
+}
+
+.fa-react:hover {
+    color: #83e4ff;
+}
